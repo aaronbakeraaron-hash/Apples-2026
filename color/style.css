@@ -1,0 +1,101 @@
+
+/* Deep Green-Black (#1F2F2B): Headings, Top Navigation Text, Logo.
+Sage Green (#3F5F55): Secondary Titles, Subtle Background Panels.
+Light Sage (#A6B89A): Icons, Active Button Hover, Sub-headers.
+Oatmeal (#E7E4D9): Main Website Background (creates a soft, premium feel).
+Copper (#C07A4B): */
+
+/* --- General Styles --- */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+     background-color: #4169E1;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* --- Navbar --- */
+header {
+     background: linear-gradient(to bottom, #E7E4D9, #E7E4D9);
+    padding: 20px 50px;
+    border-bottom: 1px solid #C07A4B;
+    display: flex;
+}
+
+.logo { font-weight: bold; font-size: 1.2em; }
+
+nav ul { list-style: none; padding: 0px; display: flex;
+  flex-wrap: wrap;}
+nav ul li {  display: inline-block;  margin-bottom:20px; }
+nav ul li a:hover, nav ul li a.active { color: #A6B89A; }
+nav ul li a {border: 2px solid #333; padding: 8px 16px;
+    margin: 5px;}
+
+/* --- Hero Section --- */
+.hero { text-align: center; padding: 60px 20px; }
+.hero h1 { font-size: 3em; margin-bottom: 10px; }
+.hero p { max-width: 600px; margin: 0 auto; }
+
+/* --- Gallery Filters --- */
+.filter-buttons { text-align: center; margin-bottom: 30px; }
+.filter-buttons button {
+    background: none; border: 3px solid #333; padding: 8px 16px;
+    margin: 5px; cursor: pointer; transition: 0.3s;
+}
+.filter-buttons button.active, .filter-buttons button:hover {
+    background-color: #C07A4B); color: #1F2F2B; border-color: #A6B89A;
+}
+
+/* --- Grid System --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 50px 50px 50px;
+}
+
+.portfolio-item { position: relative; overflow: hidden; }
+.portfolio-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+
+/* --- items --- */
+#portfolio-previews{
+  justify-content: space-between;
+    align-items: center;
+     text-align: center;
+}
+.overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background-color: rgba(49, 71, 58, 0.8);
+    overflow: hidden; width: 100%; height: 0;
+    transition: 0.5s; display: flex; justify-content: center; align-items: center;
+}
+.portfolio-item:hover .overlay { height: 100%; }
+.overlay a {
+    color: white; font-weight: bold; border: 2px solid white;
+    padding: 10px 20px; text-transform: uppercase;
+}
+.abc{
+  background-color: #E7E4D9;
+  width: 300px;
+  border: 5px solid #4169E1;
+  padding: 50px;
+  margin: 20px;
+}
+/* --- Footer --- */
+footer { text-align: center; padding: 30px; font-size: 0.9em; color: #3F5F55; }
+
+
+
+
